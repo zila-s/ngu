@@ -1,0 +1,43 @@
+.blue{
+    --clr: #3a86ff;
+}
+
+.red{
+    --clr: #d62828;
+}
+
+.yellow{
+    --clr:#ffb703;
+}
+
+.green{
+    --clr:#2a9d8f;
+}
+
+.box{
+    background-color: var(--clr);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px rgb(0, 0, 0.3);
+    transform:translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box h2{
+    font-size: 45px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.box.show{
+    transform: translateX(0);
+}
