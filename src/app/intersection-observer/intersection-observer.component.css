@@ -25,20 +25,16 @@
     margin: 10px;
     border-radius: 20px;
     box-shadow: 2px 4px 5px rgb(0, 0, 0.3);
-    transform:translateX(400%);
-    transition: transform 0.4s ease;
+    
 }
 
-.box:nth-of-type(even){
-    transform: translateX(-400%);
+.reveal{
+    opacity: 0;
+    transform: translateX(-38px);
 }
 
-.box h2{
-    font-size: 45px;
-    text-shadow: 2px 2px 3px #000;
-}
-
-.box.show{
+.reveal-visible{
+    opacity: 1;
     transform: translateX(0);
+    transition:  1s ease;
 }
-
