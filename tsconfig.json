@@ -29,5 +29,11 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "files": [
+    "node_modules/@editorjs/editorjs/types/configs/conversion-config.ts",
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
 }

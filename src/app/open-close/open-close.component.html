@@ -1,0 +1,62 @@
+<nav>
+  <button type="button" (click)="toggle()">Toggle Open/Close</button>
+</nav>
+
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <p>The box is now {{ isOpen ? "Open" : "Closed" }}!</p>
+</div>
+<!--------------------------->
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-4">
+    <h1>The City</h1>
+    <p>
+      Chania is the capital of the Chania region on the island of Crete. The
+      city can be divided in two parts, the old town and the modern city.
+    </p>
+    <p>
+      Resize the browser window to see how the content respond to the resizing.
+    </p>
+  </div>
+  <div class="col-5">
+    <p>Donald</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-5">
+    <div style="background: #fafafa; width: 300px; height: 300px">
+      <div #editor></div>
+    </div>
+    <div><button (click)="showEditorData()">show</button></div>
+  </div>
+
+  <div class="col-7">
+    <h2>Show Editor</h2>
+    <div *ngFor="let editor of editorSave">
+      <p>{{ editor.data.text }}</p>
+    </div>
+  </div>
+</div>
+<!----------------------->
+
+<div class="holster">
+  <div class="container y mandatory-scroll-snapping" dir="ltr">
+    <div class="box" style="background: #264653;">2</div>
+    <div class="box" style="background: #2a9d8f;">3</div>
+    <div class="box" style="background: #e9c46a;">4</div>
+    <div class="box" style="background: #f4a261;">5</div>
+  </div>
+</div>
