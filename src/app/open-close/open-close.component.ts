@@ -98,3 +98,7 @@ export class OpenCloseComponent {
       });
   }
 }
+
+//https://www.saashub.com/compare-framer-motion-vs-material-design-for-angular
+
+//
