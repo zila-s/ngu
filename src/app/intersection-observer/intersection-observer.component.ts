@@ -21,7 +21,13 @@ export class IntersectionObserverComponent {
       this.handelIntersect,
       this.options
     );
-    this.observer.observe(document.querySelector('.reveal')!);
+    let test = document.querySelectorAll('[class*="reveal-"]')!;
+    document.querySelectorAll('[class*="reveal-"]')!.forEach((element) => {
+      console.log(element);
+      this.observer.observe(element);
+    });
+
+    console.log(test);
   }
 
   handelIntersect(entries: any, observer: any) {
@@ -42,5 +48,6 @@ export class IntersectionObserverComponent {
   }
 }
 
-
 //https://cubic-bezier.com/#.09,.82,.62,1.17
+
+//https://developer.mozilla.org/fr/docs/Web/CSS/@media/prefers-reduced-motion
