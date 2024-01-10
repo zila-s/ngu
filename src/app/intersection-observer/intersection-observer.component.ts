@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { gsap } from "gsap";
 
 @Component({
   selector: 'app-intersection-observer',
   templateUrl: './intersection-observer.component.html',
+ 
   styleUrls: ['./intersection-observer.component.css'],
 })
 export class IntersectionObserverComponent {
   ra: number = 0.1;
+
+  barba:any;
   options = {
     root: null,
     rootMargin: '0px',
@@ -28,6 +32,22 @@ export class IntersectionObserverComponent {
     });
 
     console.log(test);
+
+    this.barba.init({
+      transitions: [{
+        name: 'opacity-transition',
+        leave(data:any) {
+          return gsap.to(data.current.container, {
+            opacity: 0
+          });
+        },
+        enter(data:any) {
+          return gsap.from(data.next.container, {
+            opacity: 0
+          });
+        }
+      }]
+    });
   }
 
   handelIntersect(entries: any, observer: any) {

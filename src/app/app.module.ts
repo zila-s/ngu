@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
 import { ScrollTComponent } from './scroll-t/scroll-t.component';
 import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IntersectionObserverComponent } from './intersection-observer/intersect
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

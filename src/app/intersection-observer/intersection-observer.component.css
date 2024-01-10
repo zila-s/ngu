@@ -1,3 +1,5 @@
+
+
 .blue {
   --clr: #3a86ff;
 }
@@ -49,7 +51,10 @@
   opacity: 1 !important;
   transform: translateX(0);
   transition: 1s cubic-bezier(.92,.39,.06,.91);
+  
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
   .reveal  .reveal-visible {
@@ -57,4 +62,57 @@
     transform: translateX(0);
     transition: 1s cubic-bezier(.92,.39,.06,.91);
   }
+}
+
+/*entrainement css*/
+/*https://www.youtube.com/watch?v=avw21xGxflU*/
+.b2{
+  /* transition: 1s cubic-bezier(.92,.39,.06,.91);
+  transition-property: scale; */
+  animation: laby 8s infinite alternate;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 5px rgb(0, 0, 0.3);
+  background: #ffb703;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation-fill-mode: forwards; */
+}
+
+.b2:hover{
+  animation-play-state: paused;
+}
+
+@keyframes laby{
+  30%{
+    /* rotate: 90deg; */
+    translate: 500px;
+  }
+  70%{
+    translate: 500px -650px;
+  }
+  100%{
+    translate: 650px -650px;
+  }
+}
+
+/* .box:hover{
+  scale: 1.1;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
