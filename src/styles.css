@@ -2,10 +2,6 @@
 body{
     background: #636e72;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-x: hidden;
 }
 
 h1{

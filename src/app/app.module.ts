@@ -8,13 +8,15 @@ import { OpenCloseComponent } from './open-close/open-close.component';
 import { ScrollTComponent } from './scroll-t/scroll-t.component';
 import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
 import {MatIconModule} from '@angular/material/icon';
+import { CssTrainingComponent } from './css-training/css-training.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OpenCloseComponent,
     ScrollTComponent,
-    IntersectionObserverComponent
+    IntersectionObserverComponent,
+    CssTrainingComponent
   ],
   imports: [
     BrowserModule,

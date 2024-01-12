@@ -20,6 +20,7 @@ export class IntersectionObserverComponent {
   observer!: IntersectionObserver;
 
   ngOnInit(): void {
+    
     console.log(this.ra);
     this.observer = new IntersectionObserver(
       this.handelIntersect,
@@ -65,6 +66,22 @@ export class IntersectionObserverComponent {
       console.log(element.intersectionRatio);
     });
     console.log('handleObseve');
+  }
+
+  onMove(event:any){
+    
+    let cursor = document.getElementById('cursor');
+    console.log(cursor);
+    
+    document.addEventListener("mousemove",(event)=>{
+     let x = event.clientX;
+    let y = event.clientY;
+      if(cursor){
+         cursor.style.top=x+"px";
+         cursor.style.left=y+"px";
+      }
+     
+    })
   }
 }
 

@@ -1,0 +1,29 @@
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4caf50;
+}
+
+svg{
+    width: 80px;
+    height: 80px;
+    fill: none !important;
+    stroke: currentColor !important;
+}
+
+div{
+    float: left;
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+https://www.svgrepo.com/svg/532043/cloud-sun-alt
+*/
