@@ -1,4 +1,4 @@
-div.sticky {
+/* div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -24,6 +24,58 @@ div{
     display: table;
 }
 
+.test{
+    width: 25px;
+    height: 25px;
+    background: yellow;
+   
+   
+}
+
+.test::after{
+    content: "";
+    position: relative;
+    margin-left:-3px ;
+    border-width: 15px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+} */
+
+/*-------------------------------------*/
+
+.card {
+  width: 20%;
+  height: 50vh;
+  background: #93bdc2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 16px;
+  
+}
+
+.picture {
+  width: 10vw;
+  height: 16vh;
+  /* height: 50vh; */
+  background: yellow;
+  position: absolute;
+  overflow: hidden;
+  background-image: url("src/assets/street-8270869_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  object-fit: cover;
+  top: -40px;
+  left: -35px;
+}
+
+/* img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;display: block;
+} */
 /*
 https://www.svgrepo.com/svg/532043/cloud-sun-alt
 */
